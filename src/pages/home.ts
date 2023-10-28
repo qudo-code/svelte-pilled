@@ -45,7 +45,7 @@ export const home = () => /*html*/ `
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto rounded-3xl shadow-lg p-5 bg-white my-8">
+    <section class="max-w-5xl mx-auto rounded-3xl shadow-lg p-5 bg-white my-8">
         <div>
             <h2 class="text-3xl font-black mb-2">Getting Started</h2>
             <p class="text-gray-500">To start, we will need some .svelte files and a build system that can compile them. Navigate to where you keep your projects and run the following to generate a simple Svelte project (not SvelteKit) using Vite. Pick "Svelte" then "Typescript".</p>
@@ -55,14 +55,33 @@ export const home = () => /*html*/ `
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto rounded-3xl shadow-lg p-5 bg-white grid grid-cols-1 md:grid-cols-6 gap-5">
-        <div class="md:col-span-4">
+    <section class="max-w-5xl mx-auto rounded-3xl shadow-lg p-5 bg-white grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="">
             <h2 class="text-3xl font-black mb-2">Project Structure</h2>
             <p class="text-gray-500">Once you've generated the boilerplate project, it should look something like this screenshot. Let's dive into some of the important files.</p>
-        
+            <div class="my-5">
+                <h3 class="text-xl font-bold mb-2">📁 public</h3>
+                <p class="text-gray-500">This is where you keep your public assets. The files in this directory will be hosted at your domain.</p>
             </div>
-        <div class="md:col-span-2">
-            <img src="data:image/png;base64, ${projectStructure}" class="rounded-3xl" />
+            <div class="my-5">
+                <h3 class="text-xl font-bold mb-2">📁 lib</h3>
+                <p class="text-gray-500">A place to keep components and utils.</p>
+            </div>
+            <div class="my-5">
+                <h3 class="text-xl font-bold mb-2">📄 index.html</h3>
+                <p class="text-gray-500">This is the template that will wrap your whole app. This is where you could link Google Fonts or add script tags such as Google Analytics.</p>
+            </div>
+            <div class="my-5">
+                <h3 class="text-xl font-bold mb-2">📄 app.css</h3>
+                <p class="text-gray-500">This is where to keep global styles and themes.</p>
+            </div>
+            <div class="my-5">
+                <h3 class="text-xl font-bold mb-2">📄 main.ts</h3>
+                <p class="text-gray-500">This is the apps entry point. This is where you can import global styles and define a root component to mount to the document, in this example it's App.svelte.</p>
+            </div>
+        </div>
+        <div class="mx-auto">
+            <img src="data:image/png;base64, ${projectStructure}" class="rounded-3xl w-full" />
         </div>
     </section>
 `;
